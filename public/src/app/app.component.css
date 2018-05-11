@@ -1,0 +1,26 @@
+.top{
+    border: rgb(239, 108, 0) 4px solid;
+}
+.buildings{
+    width: 200px;
+    border: 3px black solid;
+    display: inline-block;
+    margin: 20px;
+    height: 100%;
+}
+button{
+    color: blue;
+    height: 40px;
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: blue 1px solid;
+}
+.results{
+    display: inline-block;
+    margin: 15px;
+    width: 500px;
+    height: 400px;
+    border: rgb(0, 0, 219) 3px solid;
+    text-align:center;
+}

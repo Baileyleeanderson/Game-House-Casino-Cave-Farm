@@ -1,0 +1,36 @@
+
+<div style="text-align:center" class="wrapper">
+  <div class="top">
+    <h1>Ninja Gold!</h1>
+    <h2>Total gold:{{totalgold}} </h2>
+
+    <div class="buildings">
+      <h2>FARM</h2>
+      <h3>Earns 2-5 gold</h3>
+      <button id="farm"(click)="goldOnClick($event)">Farm!</button>
+    </div>
+
+    <div class="buildings">
+      <h2>CAVE</h2>
+      <h3>Earns 5-10 gold</h3>
+      <button id="cave"(click)="goldOnClick($event)">Cave!</button>
+    </div>
+
+    <div class="buildings">
+      <h2>HOUSE</h2>
+      <h3>Earns 7-15 gold</h3>
+      <button id="house"(click)="goldOnClick($event)">House!</button>
+    </div>
+
+    <div class="buildings">
+      <h2>CASINO</h2>
+      <h3>Win/lose up to 100 gold</h3>
+      <button id="casino"(click)="goldOnClick($event)">Casino!</button>
+    </div>
+  </div>
+  <div class="results">
+  <h1>Adventure Log:</h1>
+    <p *ngFor="let gold of gamegold"> You {{gold.earned}}  {{gold.gold}} At the {{gold.place}} </p>
+  </div>
+</div>
+
